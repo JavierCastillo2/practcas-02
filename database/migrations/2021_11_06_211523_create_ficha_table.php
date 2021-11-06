@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateGuiaTable extends Migration
+class CreateFichaTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateGuiaTable extends Migration
      */
     public function up()
     {
-        Schema::create('guia', function (Blueprint $table) {
+        Schema::create('ficha', function (Blueprint $table) {
             $table->id();
             $table->String('nombre');
-            $table->text('descripcion');
-            $table->String('tema');
-            $table->String('Duracion');
+            $table->biginteger('guia_id')->unsigned();
+            $table->foreign('guia_id')->references('id')->on('guia');
             $table->timestamps();
         });
     }
@@ -30,6 +29,6 @@ class CreateGuiaTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('guia');
+        Schema::dropIfExists('ficha');
     }
 }

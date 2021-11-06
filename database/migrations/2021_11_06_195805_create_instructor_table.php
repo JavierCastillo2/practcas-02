@@ -18,6 +18,8 @@ class CreateInstructorTable extends Migration
             $table->String('nombre');
             $table->String('apellido');
             $table->String('especialidad');
+            $table->biginteger('users_id')->unsigned();
+            $table->foreign('users_id')->references('id')->on('users');
             $table->timestamps();
         });
     }

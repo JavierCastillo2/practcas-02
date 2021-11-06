@@ -17,4 +17,8 @@ class Aprendiz extends Model
             'correo',
             'genero',
         ];
+        public function company(){
+            return $this->belongsTo('App\Models\Compani', 'companies_id');
+        }
+    
 }

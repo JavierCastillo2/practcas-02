@@ -19,6 +19,14 @@ class CreateAprendizTable extends Migration
             $table->String('apellido');
             $table->String('correo');
             $table->String('genero');
+            $table->biginteger('users_id')->unsigned();
+            $table->foreign('users_id')->references('id')->on('users');
+            $table->biginteger('instructor_id')->unsigned();
+            $table->foreign('instructor_id')->references('id')->on('instructor');
+            $table->biginteger('guia_id')->unsigned();
+            $table->foreign('guia_id')->references('id')->on('guia');
+            $table->biginteger('ficha_id')->unsigned();
+            $table->foreign('ficha_id')->references('id')->on('ficha');
             $table->timestamps();
         });
     }

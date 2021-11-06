@@ -17,4 +17,7 @@ class Instructor extends Model
         'apellido',
         'especialidad',
     ];
+    public function usuarios(){
+        return $this->belongsTo('App\Models\User', 'users_id');
+    }
 }
