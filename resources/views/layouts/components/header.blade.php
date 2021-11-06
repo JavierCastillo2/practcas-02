@@ -28,9 +28,7 @@
     </div>
     </nav>
 
-
     <ul class="header-nav me-3">
-
     <ul class="header-nav me-4">
     <li class="nav-item dropdown d-flex align-items-center"><a class="nav-link py-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
     <div class="avatar avatar-md"><img class="avatar-img" src="{{url('img/usuario.png')}}"  alt="user@email.com"></div>
@@ -43,9 +41,6 @@
     <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-user"></use>
     </svg> Profile</a><a class="dropdown-item" href="#">
     <div class="dropdown-divider"></div><a class="dropdown-item" href="#">
-    <svg class="icon me-2">
-     <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-lock-locked"></use>
-    </svg> Lock Account</a><a class="dropdown-item" href="#">
     <svg class="icon me-2">
     <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-account-logout"></use>
     </svg> Logout</a>
