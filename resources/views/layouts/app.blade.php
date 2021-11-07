@@ -10,7 +10,7 @@
 <meta name="description" content="CoreUI - Bootstrap Admin Template">
 <meta name="author" content="Łukasz Holeczek">
 <meta name="keyword" content="Bootstrap,Admin,Template,SCSS,HTML,RWD,Dashboard">
-<title>Italo</title>
+<title>Asignaciones tareas</title>
 <link rel="manifest" href="assets/favicon/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
