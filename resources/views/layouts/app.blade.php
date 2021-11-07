@@ -40,17 +40,7 @@
 
 <div class="body flex-grow-1 px-3">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <br/>
-                <div class="d-grid gap-2">
-                    <a href="{{url('products')}}" class="btn btn-primary">Productos</a>
-                    <br/>
-                    <br/>
-                    <a href="{{url('companies')}}" class="btn btn-primary">Compañias</a>
-                  </div>
-            </div>
-        </div>
+        @yield('content')
     </div>
 </div>
 

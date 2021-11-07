@@ -17,9 +17,19 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+//     return view('dashboard');
+// })->name('dashboard');
 
-Route::resource('instructor', 'App\Http\Controllers\InstructorControler');
-Route::resource('aprendiz', 'App\Http\Controllers\AprendizControler');
+
+
+
+Route::middleware(['auth:sanctum', 'verified'])->group(function(){
+    Route::middleware('role:instructor')->group(function(){
+        Route::resource('instructor', 'App\Http\Controllers\InstructorController');
+
+    Route::middleware('role:aprendiz')->group(function(){
+        Route::resource('aprendiz', 'App\Http\Controllers\AprendizController');
+    });
+});
+});

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Instructor;
 use Illuminate\Http\Request;
 
 class InstructorController extends Controller
@@ -13,7 +14,7 @@ class InstructorController extends Controller
      */
     public function index()
     {
-        //
+        return view('instructor.index');
     }
 
     /**
